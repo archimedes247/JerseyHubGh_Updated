@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>My Wishlist | JerseyHubGh</title>
+<meta name="description" content="Your saved items at JerseyHubGh.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body class="page-wishlist">
+
+<div id="toast-container"></div>
+
+<div class="top-bar">
+    <div>🚚 Free Shipping on Orders Over GHS 500</div>
+    <div>🚛 Nationwide Deliveries</div>
+    <div>🎁 10% Off Your First Order</div>
+</div>
+
+<header>
+    <div class="logo">
+        <div class="logo-text"><h2>JerseyHubGh</h2><p>Wear with Pride</p></div>
+        <div><img src="Images/Logo.jpg" alt="JerseyHubGh Logo"></div>    
+    </div>
+    <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./Products.html">Shop</a>
+        <a href="./Categories.html">Categories</a> 
+        <a href="./Blog.html">Blog</a>
+        <a href="./Contact us.html">Contact</a>
+        <a class="btn btn--ghost header-whatsapp" href="https://wa.me/233248455506" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Z" fill="currentColor"/></svg>
+            Order on WhatsApp
+        </a>
+    </nav>
+    <div class="nav-overlay"></div>
+    <div class="icons">
+        <a href="./Sign Up.html" aria-label="Account"><i class="fa-regular fa-user"></i></a>
+        <a href="./Wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="badge wishlist-badge">0</span></a>
+        <a href="./Cart.html" aria-label="Shopping Cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge cart-badge">0</span></a>
+    </div>
+</header>
+
+<section class="wishlist-page">
+    <h2><i class="fa-solid fa-heart"></i> My Wishlist</h2>
+    <div class="product-grid wishlist-grid" id="wishlist-grid"></div>
+    <div class="empty-state" id="wishlist-empty" style="display:none;">
+        <i class="fa-regular fa-heart"></i>
+        <h3>Your wishlist is empty</h3>
+        <p>Save your favorite jerseys here for later.</p>
+        <a href="./Products.html" class="btn-primary">Explore Shop</a>
+    </div>
+</section>
+
+<footer>
+    <div class="footer-grid">
+        <div><h3>JerseyHubGh</h3><p>Premium football jerseys and sports apparel.</p></div>
+        <div><h4>Quick Links</h4><a href="./Products.html">Shop</a><a href="./About us.html">About</a><a href="./Contact us.html">Contact</a></div>
+        <div><h4>Customer Service</h4><a href="#">Returns</a><a href="#">Shipping</a><a href="#">FAQs</a></div>
+        <div><h4>Location</h4><p>On the top floor of the building adjacent GCB bank,<br>Yendi, Ghana</p></div>
+    </div>
+    <p class="copyright">© 2026 JerseyHubGh. All Rights Reserved.</p>
+</footer>
+
+<button class="back-to-top" aria-label="Back to top"><i class="fa-solid fa-arrow-up"></i></button>
+<script src="main.js"></script>
+</body>
+</html>

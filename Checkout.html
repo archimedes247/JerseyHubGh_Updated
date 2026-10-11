@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Checkout | JerseyHubGh</title>
+<meta name="description" content="Complete your JerseyHubGh order and choose how to confirm payment.">
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+<div id="toast-container"></div>
+<div class="top-bar"><span>Nationwide delivery across Ghana</span><span>Secure order details</span><span>Free delivery on orders over GHS 500</span></div>
+<header>
+ <a class="logo" href="./index.html"><div class="logo-text"><h2>JerseyHubGh</h2><p>Wear with Pride</p></div><img src="Images/Logo.jpg" alt="JerseyHubGh logo"></a>
+ <button class="mobile-menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+ <nav><a href="./index.html">Home</a><a href="./Products.html">Shop</a><a href="./Categories.html">Categories</a><a href="./Contact us.html">Contact</a><a class="btn btn--ghost header-whatsapp" href="https://wa.me/233248455506" target="_blank" rel="noopener"><i class="fa-brands fa-whatsapp"></i> Order on WhatsApp</a></nav>
+ <div class="nav-overlay"></div>
+ <div class="icons"><a href="./Wishlist.html" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="badge wishlist-badge">0</span></a><a href="./Cart.html" aria-label="Shopping cart"><i class="fa-solid fa-bag-shopping"></i><span class="badge cart-badge">0</span></a></div>
+</header>
+<main class="checkout-page">
+ <div class="checkout-heading"><p class="eyebrow">JUST A FEW MORE STEPS</p><h1>Checkout</h1><p>Enter your delivery details, then send your order to us on WhatsApp to confirm availability and payment.</p></div>
+ <div class="checkout-layout">
+  <form id="checkout-form" class="checkout-form checkout-customer">
+   <h2>Delivery information</h2>
+   <label>Full name<input name="fullname" autocomplete="name" required placeholder="Your full name"></label>
+   <div class="form-row"><label>Phone number<input type="tel" name="phone" autocomplete="tel" required pattern="[+0-9 ()-]{9,20}" placeholder="e.g. 024 000 0000"></label><label>Email address <span>(optional)</span><input type="email" name="email" autocomplete="email" placeholder="you@example.com"></label></div>
+   <label>Delivery address<input name="address" autocomplete="street-address" required placeholder="House number, street or landmark"></label>
+   <div class="form-row"><label>Region<select name="region" required><option value="">Choose region</option><option>Ahafo</option><option>Ashanti</option><option>Bono</option><option>Bono East</option><option>Central</option><option>Eastern</option><option>Greater Accra</option><option>North East</option><option>Northern</option><option>Oti</option><option>Savannah</option><option>Upper East</option><option>Upper West</option><option>Volta</option><option>Western</option><option>Western North</option></select></label><label>Payment preference<select name="payment" required><option value="">Select preference</option><option value="Mobile Money">Mobile Money</option><option value="Other payment method, arrange through WhatsApp">Other payment method, arrange through WhatsApp</option></select></label></div>
+   <label>Order notes <span>(optional)</span><textarea name="notes" rows="3" placeholder="Preferred size, kit name/number, delivery instructions..."></textarea></label>
+   <div id="momo-payment-details" class="momo-payment-details" hidden>
+    <h3><i class="fa-solid fa-mobile-screen-button"></i> Mobile Money payment</h3>
+    <p>After confirming product availability and the final delivery charge, send the payment to the account below.</p>
+    <div class="momo-account"><span>Account name</span><strong>Abdul Rahim Mohammed</strong><span>Mobile Money number</span><strong id="momo-number">0248455506</strong></div>
+    <button type="button" id="copy-momo-number" class="btn btn--ghost copy-momo"><i class="fa-regular fa-copy"></i> Copy MoMo number</button>
+    <p class="checkout-help">Use your order total as confirmed by JerseyHubGh. Keep your transaction reference. Payment is not automatically verified by this website.</p>
+   </div>
+   <div class="payment-note"><i class="fa-solid fa-circle-info"></i><div><strong>How payment works</strong><p>Mobile Money uses the account details shown here. Any other payment method must be arranged directly through WhatsApp. Your order is not confirmed until the store confirms availability, delivery charges, and payment.</p></div></div>
+   <button type="button" id="order-whatsapp" class="checkout-btn whatsapp-checkout"><i class="fa-brands fa-whatsapp"></i> Continue on WhatsApp</button>
+   <p class="checkout-help">WhatsApp opens with your order and delivery details ready to send. For Mobile Money, use WhatsApp to confirm your order and share the transaction reference after paying.</p>
+  </form>
+  <aside class="checkout-order"><h2>Your order</h2><div id="checkout-order-items"></div><div class="summary-row"><span>Subtotal</span><strong id="checkout-subtotal">GHS 0.00</strong></div><div class="summary-row"><span>Delivery</span><strong id="checkout-shipping">GHS 30.00</strong></div><div class="summary-row total"><span>Total</span><strong id="checkout-total">GHS 0.00</strong></div><a href="./Cart.html" class="edit-cart"><i class="fa-solid fa-arrow-left"></i> Edit cart</a></aside>
+ </div>
+</main>
+<footer><div class="footer-grid"><div><h3>JerseyHubGh</h3><p>Premium football jerseys and sports apparel.</p></div><div><h4>Quick links</h4><a href="./Products.html">Shop</a><a href="./About us.html">About us</a><a href="./Contact us.html">Contact</a></div><div><h4>Customer support</h4><a href="./Cart.html">Shopping cart</a><a href="./Wishlist.html">Wishlist</a></div><div><h4>Location</h4><p>Yendi, Ghana</p></div></div><p class="copyright">© 2026 JerseyHubGh. All rights reserved.</p></footer>
+<script src="main.js"></script>
+</body>
+</html>
